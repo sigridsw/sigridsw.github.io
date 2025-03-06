@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title | default: "Sigrid Swim" }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+      <h1>{{ site.title }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>Software developer and nature lover.</p>
+    </footer>
+  </body>
+</html>
